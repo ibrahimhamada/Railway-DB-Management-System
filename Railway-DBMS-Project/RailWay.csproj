@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BD00DE31-B329-4F7A-AEAB-FA88F234416E}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>RailWay</RootNamespace>
+    <AssemblyName>RailWay</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddNewTrain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddNewTrain.Designer.cs">
+      <DependentUpon>AddNewTrain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controller.cs" />
+    <Compile Include="DBManager.cs" />
+    <Compile Include="EmpEditPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmpEditPassword.Designer.cs">
+      <DependentUpon>EmpEditPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees1.Designer.cs">
+      <DependentUpon>Employees1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employees2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employees2.Designer.cs">
+      <DependentUpon>Employees2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSelectTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSelectTime.Designer.cs">
+      <DependentUpon>EmployeeSelectTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeSetQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeSetQuantity.Designer.cs">
+      <DependentUpon>EmployeeSetQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HashCode.cs" />
+    <Compile Include="InsertNewStation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertNewStation.Designer.cs">
+      <DependentUpon>InsertNewStation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTrains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTrains.Designer.cs">
+      <DependentUpon>MyTrains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Passengers Info Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Passengers Info Employee.Designer.cs">
+      <DependentUpon>Passengers Info Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Stations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Stations.Designer.cs">
+      <DependentUpon>Stations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatisticsReport.Designer.cs">
+      <DependentUpon>StatisticsReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Reservation Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket Reservation Employee.Designer.cs">
+      <DependentUpon>Ticket Reservation Employee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserEditPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserEditPassword.Designer.cs">
+      <DependentUpon>UserEditPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View Trains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View Trains.Designer.cs">
+      <DependentUpon>View Trains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAndCancelEmp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewAndCancelEmp.Designer.cs">
+      <DependentUpon>ViewAndCancelEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewRequests.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewRequests.Designer.cs">
+      <DependentUpon>ViewRequests.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertNewTrack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertNewTrack.Designer.cs">
+      <DependentUpon>InsertNewTrack.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertToBelongs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertToBelongs.Designer.cs">
+      <DependentUpon>InsertToBelongs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Other Passengers Info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Other Passengers Info.Designer.cs">
+      <DependentUpon>Other Passengers Info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendRequest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendRequest.Designer.cs">
+      <DependentUpon>SendRequest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SetQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SetQuantity.Designer.cs">
+      <DependentUpon>SetQuantity.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InsertStatistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertStatistics.Designer.cs">
+      <DependentUpon>InsertStatistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTickets.Designer.cs">
+      <DependentUpon>MyTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SelectTime.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectTime.Designer.cs">
+      <DependentUpon>SelectTime.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistics.Designer.cs">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ticket Reservation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ticket Reservation.Designer.cs">
+      <DependentUpon>Ticket Reservation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tickets For Other Passengers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tickets For Other Passengers.Designer.cs">
+      <DependentUpon>Tickets For Other Passengers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracks and Stations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracks and Stations.Designer.cs">
+      <DependentUpon>Tracks and Stations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tracks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tracks.Designer.cs">
+      <DependentUpon>Tracks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trains.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trains.Designer.cs">
+      <DependentUpon>Trains.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStatisticsInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateStatisticsInfo.Designer.cs">
+      <DependentUpon>UpdateStatisticsInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateTrainInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateTrainInfo.Designer.cs">
+      <DependentUpon>UpdateTrainInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User.Designer.cs">
+      <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddNewTrain.resx">
+      <DependentUpon>AddNewTrain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmpEditPassword.resx">
+      <DependentUpon>EmpEditPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees1.resx">
+      <DependentUpon>Employees1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employees2.resx">
+      <DependentUpon>Employees2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSelectTime.resx">
+      <DependentUpon>EmployeeSelectTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeSetQuantity.resx">
+      <DependentUpon>EmployeeSetQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertNewStation.resx">
+      <DependentUpon>InsertNewStation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertNewTrack.resx">
+      <DependentUpon>InsertNewTrack.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertToBelongs.resx">
+      <DependentUpon>InsertToBelongs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTrains.resx">
+      <DependentUpon>MyTrains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Other Passengers Info.resx">
+      <DependentUpon>Other Passengers Info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Passengers Info Employee.resx">
+      <DependentUpon>Passengers Info Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendRequest.resx">
+      <DependentUpon>SendRequest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SetQuantity.resx">
+      <DependentUpon>SetQuantity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertStatistics.resx">
+      <DependentUpon>InsertStatistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTickets.resx">
+      <DependentUpon>MyTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectTime.resx">
+      <DependentUpon>SelectTime.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stations.resx">
+      <DependentUpon>Stations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistics.resx">
+      <DependentUpon>Statistics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StatisticsReport.resx">
+      <DependentUpon>StatisticsReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Reservation Employee.resx">
+      <DependentUpon>Ticket Reservation Employee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ticket Reservation.resx">
+      <DependentUpon>Ticket Reservation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tickets For Other Passengers.resx">
+      <DependentUpon>Tickets For Other Passengers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracks and Stations.resx">
+      <DependentUpon>Tracks and Stations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tracks.resx">
+      <DependentUpon>Tracks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trains.resx">
+      <DependentUpon>Trains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateStatisticsInfo.resx">
+      <DependentUpon>UpdateStatisticsInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateTrainInfo.resx">
+      <DependentUpon>UpdateTrainInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User.resx">
+      <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEditPassword.resx">
+      <DependentUpon>UserEditPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View Trains.resx">
+      <DependentUpon>View Trains.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewAndCancelEmp.resx">
+      <DependentUpon>ViewAndCancelEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewRequests.resx">
+      <DependentUpon>ViewRequests.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
